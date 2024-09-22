@@ -2,7 +2,7 @@
 
 // 1. Create a variable to store the singleton instance of the bank branch. "bankBranchInstance"
 
-const bankBranchInstance = null
+const bankBranchInstance = null;
 // 2. Define a class called `BankBranch` for managing branch information.
 
 class BankBranch { 
@@ -43,13 +43,16 @@ class BankBranch {
 //    - Use the `getBranchInfo` method to retrieve branch information from the instances.
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 
+// Created new instances of the BankBranch class with different branch information.
 const branchA = new BankBranch("This is Branch A.");
 const branchB = new BankBranch("This is Branch B.");
 
+//Used 'getBranchInfo' method to retrieve branch info.
 console.log(branchA.getBranchInfo());
-
 console.log(branchB.getBranchInfo());
 
+//Verify that brachA and branchB both refer to the same instance 
+//by comparing them using '===' .
 console.log(branchA === branchB);
 
 
