@@ -44,16 +44,19 @@ class BankBranch {
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 
 // Created new instances of the BankBranch class with different branch information.
-const branchA = new BankBranch("This is Branch A.");
+const branchA = new BankBranch("This is the main branch.");
 const branchB = new BankBranch("This is Branch B.");
+const branchC = new BankBranch("this is branch C.")
 
 //Used 'getBranchInfo' method to retrieve branch info.
 console.log(branchA.getBranchInfo());
 console.log(branchB.getBranchInfo());
+console.log(branchC.getBranchInfo());
 
-//Verify that brachA and branchB both refer to the same instance 
+//Verify that branchA and branchB both refer to the same instance 
 //by comparing them using '===' .
 console.log(branchA === branchB);
+console.log(branchB === branchC);
 
 
 
